@@ -1,5 +1,9 @@
-function TodoResumeCounter() {
-  return <h1>Has completado 3 de 5 TODOs</h1>;
+function TodoResumeCounter({ completedTodos, allTodos }) {
+  return (
+    <h1>
+      Has completado {completedTodos} de {allTodos} TODOs
+    </h1>
+  );
 }
 
 export { TodoResumeCounter };
